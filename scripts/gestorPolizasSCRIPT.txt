@@ -1,0 +1,18 @@
+CREATE DATABASE gestorPolizas;
+
+USE gestorPolizas;
+
+CREATE TABLE user (
+	id varchar(30) NOT NULL,
+    tel varchar(30) NOT NULL,
+    password TINYTEXT NOT NULL,
+	name varchar(25) NOT NULL,
+   	email varchar(40) NOT NULL,
+    medioPago varchar(25) NOT NULL,
+	rol varchar(25) NOT NULL,
+	PRIMARY KEY (id),
+    UNIQUE KEY id_UNIQUE (id)
+);
+
+select * from user;
+

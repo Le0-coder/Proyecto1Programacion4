@@ -39,7 +39,7 @@ public class RegisterController extends HttpServlet {
             if(request.getParameter("btn-register")!=null){
                 String user = request.getParameter("user");
                  String password = request.getParameter("password");
-                 C1.setId(Integer.parseInt(user));
+               //  C1.setId(Long(user));
                  C1.setPassword(password);
             }
         }

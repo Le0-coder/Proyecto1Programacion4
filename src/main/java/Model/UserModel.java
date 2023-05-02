@@ -9,13 +9,13 @@ package Model;
  * @author leosa
  */
 public class UserModel {
-    private int id , tel;
-    private String password , name , email , medioPago , rol;
+    
+    private String id , tel , password , name , email , medioPago , rol;
 
     public UserModel() {
     }
 
-    public UserModel(int id, int tel, String password, String name, String email, String medioPago, String rol) {
+    public UserModel(String id, String tel, String password, String name, String email, String medioPago, String rol) {
         this.id = id;
         this.tel = tel;
         this.password = password;
@@ -28,19 +28,19 @@ public class UserModel {
     
     
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public int getTel() {
+    public String getTel() {
         return tel;
     }
 
-    public void setTel(int tel) {
+    public void setTel(String tel) {
         this.tel = tel;
     }
 
